@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SAT PRO – Complete</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#020617" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="app-header">
+      <div class="app-title-block">
+        <h1 class="app-title">SAT PRO</h1>
+        <span class="app-subtitle">Private practice · Multi-user · Timed</span>
+      </div>
+      <button id="currentUserBtn" class="user-chip">
+        <span id="currentUserName">No user</span>
+      </button>
+    </header>
+
+    <!-- LOGIN -->
+    <main id="loginScreen" class="screen active">
+      <section class="card login-card">
+        <h2>Select or create user</h2>
+        <p class="muted">Each user has their own stats and mistakes on this device.</p>
+
+        <div id="userList" class="user-list empty"></div>
+
+        <button id="showCreateUserBtn" class="primary-btn full-width">
+          + New user
+        </button>
+
+        <form id="createUserForm" class="create-user-form hidden">
+          <label>
+            Name
+            <input type="text" id="newUserName" placeholder="Alex" required />
+          </label>
+          <label>
+            PIN (optional)
+            <input type="password" id="newUserPin" inputmode="numeric" maxlength="6" placeholder="Leave empty for no PIN" />
+          </label>
+          <div class="form-row">
+            <button type="submit" class="primary-btn full-width">Create &amp; login</button>
+            <button type="button" id="cancelCreateUserBtn" class="secondary-btn full-width">Cancel</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <!-- APP -->
+    <main id="appScreen" class="screen">
+      <nav class="top-nav">
+        <button class="nav-btn active" data-section="dashboard">Dashboard</button>
+        <button class="nav-btn" data-section="math">Math</button>
+        <button class="nav-btn" data-section="reading">Reading</button>
+        <button class="nav-btn" data-section="vocab">Vocab</button>
+        <button class="nav-btn" data-section="mistakes">Mistakes</button>
+        <button class="nav-btn" data-section="timed">Timed</button>
+      </nav>
+
+      <!-- DASHBOARD -->
+      <section id="section-dashboard" class="section active">
+        <section class="card">
+          <h2>Dashboard</h2>
+          <p class="muted">Overview of your progress.</p>
+          <div class="stats-grid">
+            <article class="stat-card">
+              <h3>Overall</h3>
+              <p>Answered: <span id="overallAnswered">0</span></p>
+              <p>Accuracy: <span id="overallAccuracy">0%</span></p>
+            </article>
+            <article class="stat-card">
+              <h3>Math</h3>
+              <p>Answered: <span id="mathAnswered">0</span></p>
+              <p>Accuracy: <span id="mathAccuracy">0%</span></p>
+            </article>
+            <article class="stat-card">
+              <h3>Reading</h3>
+              <p>Answered: <span id="readingAnswered">0</span></p>
+              <p>Accuracy: <span id="readingAccuracy">0%</span></p>
+            </article>
+            <article class="stat-card">
+              <h3>Vocab</h3>
+              <p>Answered: <span id="vocabAnswered">0</span></p>
+              <p>Accuracy: <span id="vocabAccuracy">0%</span></p>
+            </article>
+          </div>
+
+          <div class="quick-actions">
+            <button class="primary-btn" data-jump="math">Start Math</button>
+            <button class="secondary-btn" data-jump="reading">Start Reading</button>
+            <button class="secondary-btn" data-jump="vocab">Start Vocab</button>
+          </div>
+        </section>
+      </section>
+
+      <!-- MATH -->
+      <section id="section-math" class="section">
+        <section class="card">
+          <h2>Math practice</h2>
+          <p class="muted">Levels: 1 (easier) → 3 (harder). All from your SAT bank.</p>
+          <div class="controls-row">
+            <label>
+              Level
+              <select id="mathLevelSelect">
+                <option value="1">Level 1</option>
+                <option value="2">Level 2</option>
+                <option value="3">Level 3</option>
+              </select>
+            </label>
+            <button id="startMathBtn" class="primary-btn small">Start</button>
+          </div>
+          <div id="mathQuestionContainer" class="question-container hidden"></div>
+        </section>
+      </section>
+
+      <!-- READING -->
+      <section id="section-reading" class="section">
+        <section class="card">
+          <h2>Reading practice</h2>
+          <p class="muted">SAT-style reading &amp; writing questions.</p>
+          <div class="controls-row">
+            <label>
+              Level
+              <select id="readingLevelSelect">
+                <option value="1">Level 1</option>
+                <option value="2">Level 2</option>
+                <option value="3">Level 3</option>
+              </select>
+            </label>
+            <button id="startReadingBtn" class="primary-btn small">Start</button>
+          </div>
+          <div id="readingQuestionContainer" class="question-container hidden"></div>
+        </section>
+      </section>
+
+      <!-- VOCAB -->
+      <section id="section-vocab" class="section">
+        <section class="card">
+          <h2>Vocabulary practice</h2>
+          <p class="muted">Essential SAT vocabulary by level.</p>
+          <div class="controls-row">
+            <label>
+              Level
+              <select id="vocabLevelSelect">
+                <option value="1">Level 1</option>
+                <option value="2">Level 2</option>
+                <option value="3">Level 3</option>
+              </select>
+            </label>
+            <button id="startVocabBtn" class="primary-btn small">Start</button>
+          </div>
+          <div id="vocabQuestionContainer" class="question-container hidden"></div>
+        </section>
+      </section>
+
+      <!-- MISTAKES -->
+      <section id="section-mistakes" class="section">
+        <section class="card">
+          <h2>Mistakes</h2>
+          <p class="muted">Only questions you got wrong. If you answer correctly here, they disappear.</p>
+          <div class="controls-row">
+            <button id="startMistakesBtn" class="primary-btn small">Practice mistakes</button>
+            <button id="clearMistakesBtn" class="danger-btn small">Clear all mistakes</button>
+          </div>
+          <p id="mistakesSummary" class="muted"></p>
+          <div id="mistakesQuestionContainer" class="question-container hidden"></div>
+        </section>
+      </section>
+
+      <!-- TIMED -->
+      <section id="section-timed" class="section">
+        <section class="card">
+          <h2>Timed tests</h2>
+          <p class="muted">Simulate exam conditions with a countdown.</p>
+
+          <div class="controls-grid">
+            <label>
+              Section
+              <select id="timedSectionSelect">
+                <option value="math">Math</option>
+                <option value="reading">Reading</option>
+                <option value="vocab">Vocab</option>
+              </select>
+            </label>
+            <label>
+              Level
+              <select id="timedLevelSelect">
+                <option value="1">Level 1</option>
+                <option value="2">Level 2</option>
+                <option value="3">Level 3</option>
+              </select>
+            </label>
+            <label>
+              Questions
+              <select id="timedCountSelect">
+                <option value="5">5</option>
+                <option value="10" selected>10</option>
+                <option value="20">20</option>
+              </select>
+            </label>
+            <label>
+              Time (minutes)
+              <select id="timedMinutesSelect">
+                <option value="5">5</option>
+                <option value="10" selected>10</option>
+                <option value="20">20</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="controls-row">
+            <button id="startTimedBtn" class="primary-btn">Start timed test</button>
+            <div id="timedTimer" class="timer hidden">
+              ⏱ <span id="timedTimerText">10:00</span>
+            </div>
+          </div>
+
+          <div id="timedQuestionContainer" class="question-container hidden"></div>
+          <div id="timedResult" class="timed-result hidden"></div>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
