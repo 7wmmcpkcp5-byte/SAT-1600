@@ -250,6 +250,7 @@ button.danger-link:hover {
 }
 
 .muted { color: var(--muted); }
+.small-text { font-size: 0.8rem; }
 
 .user-list {
   list-style: none;
@@ -336,6 +337,9 @@ button.danger-link:hover {
     box-shadow .06s ease,
     border-color .06s ease,
     background .06s ease;
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
 }
 .answer-option::before {
   content:"";
@@ -360,6 +364,22 @@ button.danger-link:hover {
 .answer-option.wrong {
   border-color: rgba(248,113,113,1);
   background: radial-gradient(circle at top left,rgba(185,28,28,.45),rgba(69,10,10,1));
+}
+
+.answer-letter {
+  font-weight: 700;
+  min-width: 22px;
+  margin-top: 1px;
+}
+.answer-option.correct .answer-letter {
+  color: var(--success);
+}
+.answer-option.wrong .answer-letter {
+  color: var(--danger);
+}
+
+.answer-text {
+  flex: 1;
 }
 
 .explanation {

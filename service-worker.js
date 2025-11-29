@@ -1,10 +1,11 @@
-const CACHE_NAME = 'sat-pro-v2-shell-v3';
+const CACHE_NAME = 'sat-pro-v1-1-0-shell';
 const ASSETS = [
   './',
   './index.html',
-  './style.css?v=6',
-  './app.js?v=6',
-  './questions.json'
+  './style.css?v=7',
+  './app.js?v=7',
+  './questions.json',
+  './explanations.json'
 ];
 
 self.addEventListener('install', event => {

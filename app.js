@@ -1,9 +1,13 @@
-// SAT PRO V2 PRO FULL EXTENDED
+// SAT PRO v1.1.0 FULL EXTENDED
 const LS_USERS_KEY = 'sat_pro_v2_users';
 const LS_ACTIVE_USER_KEY = 'sat_pro_v2_active_user';
 const LS_THEME_GLOBAL_KEY = 'sat_pro_v2_theme_global';
 const LS_MISTAKES_PREFIX = 'sat_pro_v2_mistakes_';
 const LS_STATS_PREFIX = 'sat_pro_v2_stats_';
+
+const LS_GAM_PREFIX = 'sat1600_gam_';
+const DAILY_GOAL_XP = 50;
+
 
 const TIMED_SECONDS_PER_QUESTION = 75;
 const EXAM_TOTAL_SECONDS = 45 * 60;
@@ -47,6 +51,27 @@ function loadUsers(){
 
 function mistakesKey(userId){ return LS_MISTAKES_PREFIX + userId; }
 function statsKey(userId){ return LS_STATS_PREFIX + userId; }
+
+function gamKey(userId){ return LS_GAM_PREFIX + userId; }
+
+function loadGamification(userId){
+  if (!userId) return { xpTotal:0, streak:0, lastDay:null, xpToday:0 };
+  try {
+    const raw = localStorage.getItem(gamKey(userId));
+    if (!raw) return { xpTotal:0, streak:0, lastDay:null, xpToday:0 };
+    const parsed = JSON.parse(raw);
+    return Object.assign({ xpTotal:0, streak:0, lastDay:null, xpToday:0 }, parsed);
+  } catch {
+    return { xpTotal:0, streak:0, lastDay:null, xpToday:0 };
+  }
+}
+
+function saveGamification(userId, data){
+  if (!userId) return;
+  localStorage.setItem(gamKey(userId), JSON.stringify(data));
+}
+
+
 
 function loadMistakes(userId){
   if (!userId) return [];
@@ -121,6 +146,7 @@ function updateHomeTexts(){
   if (!STATE.currentUser){
     h.textContent = 'Hi!';
     statsP.textContent = 'Select or create a user to start practicing.';
+    updateHomeGamificationUI();
     return;
   }
   h.textContent = `Hi, ${STATE.currentUser.name}!`;
@@ -131,6 +157,7 @@ function updateHomeTexts(){
     const pct = Math.round((stats.correct / Math.max(1, stats.total)) * 100);
     statsP.textContent = `You have answered ${stats.correct} of ${stats.total} questions correctly (${pct}%).`;
   }
+  updateHomeGamificationUI();
 }
 
 function createUser(){
@@ -186,24 +213,40 @@ function toggleTheme(){
   }
 }
 
-/* QUESTIONS LOADING */
+/* QUESTIONS + EXPLANATIONS LOADING */
 async function loadQuestions(){
   try {
-    const res = await fetch('questions.json');
-    const data = await res.json();
-    STATE.questionsAll = data.map((q, idx) => ({
-      _id: 'q' + idx,
-      text: q.q,
-      opts: q.opts,
-      correctIndex: q.correct,
-      category: q.category,
-      level: String(q.level || 1),
-      explanation: q.explanation || ''
-    }));
+    const [qRes, eRes] = await Promise.all([
+      fetch('questions.json'),
+      fetch('explanations.json').catch(() => null)
+    ]);
+    if (!qRes.ok) throw new Error('questions.json not found');
+    const qData = await qRes.json();
+    let expData = {};
+    if (eRes && eRes.ok){
+      expData = await eRes.json();
+    }
+
+    STATE.questionsAll = qData.map((q, idx) => {
+      const id = 'q' + idx;
+      const exp = expData[id] || {};
+      return {
+        _id: id,
+        text: q.q,
+        opts: q.opts,
+        correctIndex: q.correct,
+        category: q.category,
+        level: String(q.level || 1),
+        explanationTitle: exp.title || '',
+        explanation: exp.theory || '',
+        explanationExample: exp.example || ''
+      };
+    });
+
     populateSubjects();
   } catch (e){
-    console.error('Error loading questions.json', e);
-    alert('Could not load questions.json');
+    console.error('Error loading questions or explanations', e);
+    alert('Could not load questions.json or explanations.json');
   }
 }
 
@@ -222,6 +265,56 @@ function populateSubjects(){
 }
 
 /* STATS HELPERS */
+
+function applyGamificationDelta(isCorrect){
+  if (!STATE.currentUser) return;
+  const today = new Date().toISOString().slice(0,10);
+  const g = loadGamification(STATE.currentUser.id);
+  const xpDelta = isCorrect ? 10 : 3;
+
+  if (g.lastDay !== today){
+    g.xpToday = 0;
+    if (g.lastDay){
+      const prev = new Date(g.lastDay);
+      const curr = new Date(today);
+      const diff = (curr - prev) / (1000*60*60*24);
+      if (diff >= 1 && diff < 2) {
+        g.streak = (g.streak || 0) + 1;
+      } else {
+        g.streak = 1;
+      }
+    } else {
+      g.streak = 1;
+    }
+    g.lastDay = today;
+  }
+
+  g.xpTotal = (g.xpTotal || 0) + xpDelta;
+  g.xpToday = (g.xpToday || 0) + xpDelta;
+
+  saveGamification(STATE.currentUser.id, g);
+}
+
+function updateHomeGamificationUI(){
+  const el = byId('xpSummary');
+  if (!el){
+    return;
+  }
+  if (!STATE.currentUser){
+    el.textContent = 'XP: 0 • Level 1 • Streak: 0 days • Daily: 0/50 XP';
+    return;
+  }
+  const g = loadGamification(STATE.currentUser.id);
+  const xpTotal = g.xpTotal || 0;
+  const streak = g.streak || 0;
+  const xpToday = g.xpToday || 0;
+  const level = Math.max(1, Math.floor(xpTotal / 200) + 1);
+  const goal = DAILY_GOAL_XP;
+  const dayLabel = streak === 1 ? 'day' : 'days';
+  el.textContent = `XP: ${xpTotal} • Level ${level} • Streak: ${streak} ${dayLabel} • Daily: ${xpToday}/${goal} XP`;
+}
+
+
 function updateStatsForQuestion(isCorrect, q){
   if (!STATE.currentUser || !q) return;
   const stats = loadStats(STATE.currentUser.id);
@@ -239,6 +332,7 @@ function updateStatsForQuestion(isCorrect, q){
   if (isCorrect) sl.correct += 1;
 
   saveStats(STATE.currentUser.id, stats);
+  applyGamificationDelta(isCorrect);
 }
 
 function buildDashboard(){
@@ -441,11 +535,12 @@ function renderCurrentQuestion(){
   const answersList = byId('answersList');
   const explBox = byId('explanationBox');
   const explText = byId('explanationText');
+  const explExample = byId('explanationExample');
   const nextBtn = byId('btnNextQuestion');
 
   if (STATE.mode === 'practice') modeLabel.textContent = 'Practice mode';
   else if (STATE.mode === 'timed') modeLabel.textContent = 'Timed mode';
-  else if (STATE.mode === 'mistakes') modeLabel.textContent = 'Mistakes mode';
+  else if (STATE.mode === 'mistakes') modeLabel.textContent = 'Review mode';
   else if (STATE.mode === 'adaptive') modeLabel.textContent = 'Adaptive mode';
   else modeLabel.textContent = 'Exam mode';
 
@@ -457,11 +552,17 @@ function renderCurrentQuestion(){
   questionText.textContent = q.text || '';
   answersList.innerHTML = '';
 
+  const letters = ['A','B','C','D'];
+
   if (Array.isArray(q.opts)){
     q.opts.forEach((ans, idx) => {
       const li = document.createElement('li');
       li.className = 'answer-option';
-      li.textContent = ans;
+      const letter = letters[idx] || String.fromCharCode(65 + idx);
+      li.innerHTML = `
+        <span class="answer-letter">${letter}.</span>
+        <span class="answer-text">${ans}</span>
+      `;
       li.dataset.index = String(idx);
       li.addEventListener('click', () => handleAnswerClick(li, idx));
       answersList.appendChild(li);
@@ -470,6 +571,7 @@ function renderCurrentQuestion(){
 
   explBox.classList.add('hidden');
   explText.textContent = '';
+  explExample.textContent = '';
   nextBtn.classList.add('hidden');
   STATE.answered = false;
 
@@ -545,8 +647,24 @@ function handleAnswerClick(li, idx){
 function showExplanation(q){
   const explBox = byId('explanationBox');
   const explText = byId('explanationText');
-  if (q.explanation){
-    explText.textContent = q.explanation;
+  const explExample = byId('explanationExample');
+  const parts = [];
+
+  if (q.explanationTitle){
+    parts.push(q.explanationTitle + ' — ' + (q.explanation || ''));
+  } else if (q.explanation){
+    parts.push(q.explanation);
+  }
+
+  explText.textContent = parts.join(' ');
+
+  if (q.explanationExample){
+    explExample.textContent = q.explanationExample;
+  } else {
+    explExample.textContent = '';
+  }
+
+  if (parts.length || q.explanationExample){
     explBox.classList.remove('hidden');
   } else {
     explBox.classList.add('hidden');
@@ -590,7 +708,7 @@ function endQuiz(fromTimer){
   if (STATE.mode === 'exam'){
     headline.textContent = fromTimer ? 'Time is up ⏱' : 'Exam finished 📝';
     line.textContent = `Correct answers: ${correct} / ${total} • Accuracy: ${pct}%`;
-    extra.textContent = 'Use Mistakes mode to review the questions you missed. This simulates a SAT-style block: no explanations until the end.';
+    extra.textContent = 'Use Review mode to review the questions you missed. This simulates a SAT-style block: no explanations until the end.';
   } else {
     line.textContent = `You answered ${correct} of ${total} questions correctly (${pct}%).`;
     if (pct >= 80){

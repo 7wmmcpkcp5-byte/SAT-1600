@@ -2,22 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>SAT PRO V2</title>
+  <title>SAT-1600 V1.1.0</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <link rel="manifest" href="manifest.json" />
   <meta name="theme-color" content="#2563eb" />
   <link rel="apple-touch-icon" href="icons/icon-192.png" />
-  <link rel="stylesheet" href="style.css?v=6" />
-  <script defer src="app.js?v=6"></script>
+
+  <link rel="stylesheet" href="style.css?v=7" />
+  <script defer src="app.js?v=7"></script>
 </head>
 <body>
   <header class="app-header">
-    <div class="app-title">SAT PRO <span class="badge">V2</span></div>
+    <div class="app-title">SAT-1600 <span class="badge">v1.4.0 HYBRID</span></div>
     <div class="header-right">
       <button id="btnGoDashboard" class="icon-button" title="Dashboard">📊</button>
       <span id="currentUserLabel" class="user-label clickable">No user</span>
       <button id="btnGoSettings" class="icon-button" title="Settings">⚙️</button>
 
+      <!-- User menu popover -->
       <div id="userMenu" class="user-menu hidden">
         <button id="menuProfile">👤 My profile</button>
         <button id="menuToggleTheme">🌙 Toggle theme</button>
@@ -28,6 +31,7 @@
   </header>
 
   <main class="app-main">
+    <!-- AUTH -->
     <section id="screen-auth" class="screen visible">
       <h1>Select user</h1>
       <div class="card">
@@ -44,6 +48,7 @@
       </div>
     </section>
 
+    <!-- HOME -->
     <section id="screen-home" class="screen">
       <h1 id="homeGreeting">Hi!</h1>
 
@@ -51,6 +56,9 @@
         <h2>Your stats</h2>
         <p id="statsSummary" class="muted">
           Answer some questions to see your statistics here.
+        </p>
+        <p id="xpSummary" class="muted small-text">
+          XP: 0 • Level 1 • Streak: 0 days • Daily: 0/50 XP
         </p>
       </div>
 
@@ -84,8 +92,8 @@
             <span class="mode-desc">Timer per question</span>
           </button>
           <button id="btnStartMistakes" class="mode-btn">
-            Mistakes
-            <span class="mode-desc">Review only wrong questions</span>
+            Review
+            <span class="mode-desc">Review questions you missed</span>
           </button>
           <button id="btnStartAdaptive" class="mode-btn">
             Adaptive
@@ -102,6 +110,7 @@
       <button id="btnChangeUser" class="link-button">Change user</button>
     </section>
 
+    <!-- QUIZ -->
     <section id="screen-quiz" class="screen">
       <div class="quiz-header">
         <div id="quizModeLabel" class="pill"></div>
@@ -121,8 +130,9 @@
         <ul id="answersList" class="answers-list"></ul>
 
         <div id="explanationBox" class="explanation hidden">
-          <h3>Explanation</h3>
+          <h3>Theory & explanation</h3>
           <p id="explanationText"></p>
+          <p id="explanationExample" class="muted small-text"></p>
         </div>
 
         <div class="quiz-footer">
@@ -132,6 +142,7 @@
       </div>
     </section>
 
+    <!-- RESULTS -->
     <section id="screen-results" class="screen">
       <h1>Score report</h1>
       <div class="card">
@@ -148,6 +159,7 @@
       </div>
     </section>
 
+    <!-- DASHBOARD -->
     <section id="screen-dashboard" class="screen">
       <h1>Dashboard</h1>
       <div class="card">
@@ -165,6 +177,7 @@
       <button id="btnDashboardBack" class="link-button">Back</button>
     </section>
 
+    <!-- SETTINGS -->
     <section id="screen-settings" class="screen">
       <h1>Settings</h1>
       <div class="card">
@@ -177,7 +190,7 @@
   </main>
 
   <footer class="app-footer">
-    <span class="muted">SAT PRO V2 – Local only</span>
+    <span class="muted">SAT-1600 v1.4.0 HYBRID – Local only</span>
   </footer>
 
   <script>
