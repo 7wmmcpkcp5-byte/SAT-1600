@@ -1,0 +1,1562 @@
+[
+  {
+    "q": "If 3x + 5 = 20, what is the value of x?",
+    "opts": [
+      "4",
+      "5",
+      "6",
+      "15"
+    ],
+    "correct": 1,
+    "category": "math",
+    "level": 1
+  },
+  {
+    "q": "A rectangle has a length of 8 and a width of 4. What is its perimeter?",
+    "opts": [
+      "12",
+      "24",
+      "32",
+      "64"
+    ],
+    "correct": 1,
+    "category": "math",
+    "level": 1
+  },
+  {
+    "q": "Which of the following is equivalent to 2(a + 3) - 4?",
+    "opts": [
+      "2a - 1",
+      "2a + 2",
+      "2a + 6",
+      "2a - 4"
+    ],
+    "correct": 1,
+    "category": "math",
+    "level": 1
+  },
+  {
+    "q": "If f(x) = x\u00b2 - 1, what is f(3)?",
+    "opts": [
+      "5",
+      "7",
+      "8",
+      "9"
+    ],
+    "correct": 2,
+    "category": "math",
+    "level": 1
+  },
+  {
+    "q": "What is 15% of 60?",
+    "opts": [
+      "6",
+      "8",
+      "9",
+      "12"
+    ],
+    "correct": 2,
+    "category": "math",
+    "level": 1
+  },
+  {
+    "q": "If 2x + 4 = 10, what is the value of x?",
+    "opts": [
+      "2",
+      "3",
+      "4",
+      "6"
+    ],
+    "correct": 1,
+    "category": "math",
+    "level": 1
+  },
+  {
+    "q": "A store sells a shirt for $20. If the price is increased by 25%, what is the new price?",
+    "opts": [
+      "$22",
+      "$24",
+      "$25",
+      "$30"
+    ],
+    "correct": 2,
+    "category": "math",
+    "level": 1
+  },
+  {
+    "q": "Which expression is equivalent to 3(x + 5) - 2?",
+    "opts": [
+      "3x + 3",
+      "3x + 13",
+      "3x + 15",
+      "3x + 5"
+    ],
+    "correct": 1,
+    "category": "math",
+    "level": 1
+  },
+  {
+    "q": "What is the slope of the line represented by the equation y = -2x + 7?",
+    "opts": [
+      "7",
+      "2",
+      "-2",
+      "-7"
+    ],
+    "correct": 2,
+    "category": "math",
+    "level": 1
+  },
+  {
+    "q": "If a = 3 and b = -2, what is the value of a\u00b2 + b?",
+    "opts": [
+      "4",
+      "7",
+      "8",
+      "11"
+    ],
+    "correct": 1,
+    "category": "math",
+    "level": 1
+  },
+  {
+    "q": "A bag contains 3 red marbles and 2 blue marbles. What is the probability of picking a red marble?",
+    "opts": [
+      "2/5",
+      "3/5",
+      "1/3",
+      "1/2"
+    ],
+    "correct": 1,
+    "category": "math",
+    "level": 1
+  },
+  {
+    "q": "What is the perimeter of a rectangle with length 10 and width 5?",
+    "opts": [
+      "15",
+      "25",
+      "30",
+      "50"
+    ],
+    "correct": 2,
+    "category": "math",
+    "level": 1
+  },
+  {
+    "q": "Solve for y: 4y - 8 = 0",
+    "opts": [
+      "0",
+      "2",
+      "4",
+      "8"
+    ],
+    "correct": 1,
+    "category": "math",
+    "level": 1
+  },
+  {
+    "q": "Which of the following numbers is NOT a factor of 12?",
+    "opts": [
+      "2",
+      "3",
+      "5",
+      "6"
+    ],
+    "correct": 2,
+    "category": "math",
+    "level": 1
+  },
+  {
+    "q": "If f(x) = 2x - 1, what is f(5)?",
+    "opts": [
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "correct": 1,
+    "category": "math",
+    "level": 1
+  },
+  {
+    "q": "Convert 2.5 hours into minutes.",
+    "opts": [
+      "120",
+      "140",
+      "150",
+      "160"
+    ],
+    "correct": 2,
+    "category": "math",
+    "level": 1
+  },
+  {
+    "q": "Which value of x satisfies the inequality x + 3 < 5?",
+    "opts": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct": 0,
+    "category": "math",
+    "level": 1
+  },
+  {
+    "q": "What is the average (mean) of 2, 4, 6, and 8?",
+    "opts": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correct": 1,
+    "category": "math",
+    "level": 1
+  },
+  {
+    "q": "The sum of two consecutive integers is 15. What are the integers?",
+    "opts": [
+      "6 and 7",
+      "7 and 8",
+      "8 and 9",
+      "5 and 10"
+    ],
+    "correct": 1,
+    "category": "math",
+    "level": 1
+  },
+  {
+    "q": "If 10% of a number is 8, what is the number?",
+    "opts": [
+      "80",
+      "88",
+      "18",
+      "0.8"
+    ],
+    "correct": 0,
+    "category": "math",
+    "level": 1
+  },
+  {
+    "q": "Which is the largest fraction?",
+    "opts": [
+      "1/2",
+      "3/4",
+      "2/3",
+      "1/4"
+    ],
+    "correct": 1,
+    "category": "math",
+    "level": 1
+  },
+  {
+    "q": "A triangle has angles 60\u00b0 and 50\u00b0. What is the third angle?",
+    "opts": [
+      "60\u00b0",
+      "70\u00b0",
+      "80\u00b0",
+      "90\u00b0"
+    ],
+    "correct": 1,
+    "category": "math",
+    "level": 1
+  },
+  {
+    "q": "Simplify: (x^3) * (x^2)",
+    "opts": [
+      "x^5",
+      "x^6",
+      "2x^5",
+      "x^1"
+    ],
+    "correct": 0,
+    "category": "math",
+    "level": 1
+  },
+  {
+    "q": "What is the value of 5! (5 factorial)?",
+    "opts": [
+      "20",
+      "60",
+      "100",
+      "120"
+    ],
+    "correct": 3,
+    "category": "math",
+    "level": 1
+  },
+  {
+    "q": "If y = 3x and x = 4, what is y?",
+    "opts": [
+      "7",
+      "12",
+      "34",
+      "43"
+    ],
+    "correct": 1,
+    "category": "math",
+    "level": 1
+  },
+  {
+    "q": "Solve for x: 5x = 0",
+    "opts": [
+      "0",
+      "1",
+      "5",
+      "Undefined"
+    ],
+    "correct": 0,
+    "category": "math",
+    "level": 1
+  },
+  {
+    "q": "What is the square root of 81?",
+    "opts": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "correct": 2,
+    "category": "math",
+    "level": 1
+  },
+  {
+    "q": "A square has a side of length 6. What is its area?",
+    "opts": [
+      "12",
+      "24",
+      "36",
+      "48"
+    ],
+    "correct": 2,
+    "category": "math",
+    "level": 1
+  },
+  {
+    "q": "x + x + x is equivalent to:",
+    "opts": [
+      "x\u00b3",
+      "3x",
+      "x+3",
+      "3x\u00b3"
+    ],
+    "correct": 1,
+    "category": "math",
+    "level": 1
+  },
+  {
+    "q": "If a train travels 60 miles in 2 hours, what is its speed?",
+    "opts": [
+      "30 mph",
+      "60 mph",
+      "90 mph",
+      "120 mph"
+    ],
+    "correct": 0,
+    "category": "math",
+    "level": 1
+  },
+  {
+    "q": "If x\u00b2 - 5x + 6 = 0, what are the possible values of x?",
+    "opts": [
+      "2 and 3",
+      "-2 and -3",
+      "1 and 6",
+      "-1 and -6"
+    ],
+    "correct": 0,
+    "category": "math",
+    "level": 2
+  },
+  {
+    "q": "In the xy-plane, the graph of y = (x - 4)\u00b2 + 3 has its vertex at which point?",
+    "opts": [
+      "(4, 3)",
+      "(-4, 3)",
+      "(4, -3)",
+      "(-4, -3)"
+    ],
+    "correct": 0,
+    "category": "math",
+    "level": 2
+  },
+  {
+    "q": "Which of the following is equal to a^(-1/2)?",
+    "opts": [
+      "-a/2",
+      "1 / sqrt(a)",
+      "sqrt(a)",
+      "-sqrt(a)"
+    ],
+    "correct": 1,
+    "category": "math",
+    "level": 2
+  },
+  {
+    "q": "A circle is defined by (x - 3)\u00b2 + (y + 2)\u00b2 = 16. What is the radius?",
+    "opts": [
+      "4",
+      "8",
+      "16",
+      "32"
+    ],
+    "correct": 0,
+    "category": "math",
+    "level": 2
+  },
+  {
+    "q": "If 5x + 3y = 15 and 2x - 3y = 6, what is the value of x?",
+    "opts": [
+      "1",
+      "3",
+      "5",
+      "2"
+    ],
+    "correct": 1,
+    "category": "math",
+    "level": 2
+  },
+  {
+    "q": "What is the value of sin(90\u00b0)?",
+    "opts": [
+      "0",
+      "0.5",
+      "1",
+      "-1"
+    ],
+    "correct": 2,
+    "category": "math",
+    "level": 2
+  },
+  {
+    "q": "Simplify: (3x\u00b2y)(2xy\u00b3)",
+    "opts": [
+      "6x\u00b2y\u00b3",
+      "6x\u00b3y\u2074",
+      "5x\u00b3y\u2074",
+      "6x\u00b3y\u00b3"
+    ],
+    "correct": 1,
+    "category": "math",
+    "level": 2
+  },
+  {
+    "q": "If f(x) = 2x + 1 and g(x) = x\u00b2, what is f(g(3))?",
+    "opts": [
+      "13",
+      "19",
+      "37",
+      "49"
+    ],
+    "correct": 1,
+    "category": "math",
+    "level": 2
+  },
+  {
+    "q": "The sum of three consecutive even integers is 48. What is the largest integer?",
+    "opts": [
+      "14",
+      "16",
+      "18",
+      "20"
+    ],
+    "correct": 2,
+    "category": "math",
+    "level": 2
+  },
+  {
+    "q": "What is the distance between points (1, 2) and (4, 6)?",
+    "opts": [
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "correct": 2,
+    "category": "math",
+    "level": 2
+  },
+  {
+    "q": "If i = sqrt(-1), what is the value of (3 + 2i) + (1 - 5i)?",
+    "opts": [
+      "4 - 3i",
+      "4 + 7i",
+      "2 - 3i",
+      "4 + 3i"
+    ],
+    "correct": 0,
+    "category": "math",
+    "level": 3
+  },
+  {
+    "q": "Which of the following is equivalent to (x\u00b3 - 1) / (x - 1)?",
+    "opts": [
+      "x\u00b2 - 1",
+      "x\u00b2 + x + 1",
+      "x\u00b2 - x + 1",
+      "x\u00b2 + 1"
+    ],
+    "correct": 1,
+    "category": "math",
+    "level": 3
+  },
+  {
+    "q": "If 2^(x+3) = 8^x, what is x?",
+    "opts": [
+      "1",
+      "1.5",
+      "2",
+      "3"
+    ],
+    "correct": 1,
+    "category": "math",
+    "level": 3
+  },
+  {
+    "q": "In the xy-plane, line k is perpendicular to the line y = 2x + 5. What is the slope of line k?",
+    "opts": [
+      "2",
+      "-2",
+      "1/2",
+      "-1/2"
+    ],
+    "correct": 3,
+    "category": "math",
+    "level": 3
+  },
+  {
+    "q": "If sin(x) = cos(30\u00b0), what is the value of x in degrees (0 < x < 90)?",
+    "opts": [
+      "30",
+      "45",
+      "60",
+      "90"
+    ],
+    "correct": 2,
+    "category": "math",
+    "level": 3
+  },
+  {
+    "q": "What are the solutions to the system: y = x\u00b2 and y = 2x + 3?",
+    "opts": [
+      "(-1, 1) and (3, 9)",
+      "(1, 1) and (-3, -9)",
+      "(0, 0) and (2, 7)",
+      "No solution"
+    ],
+    "correct": 0,
+    "category": "math",
+    "level": 3
+  },
+  {
+    "q": "If p(x) is a polynomial and p(3) = 0, which must be a factor of p(x)?",
+    "opts": [
+      "x",
+      "x + 3",
+      "x - 3",
+      "3x"
+    ],
+    "correct": 2,
+    "category": "math",
+    "level": 3
+  },
+  {
+    "q": "Simplify: i^25",
+    "opts": [
+      "1",
+      "-1",
+      "i",
+      "-i"
+    ],
+    "correct": 2,
+    "category": "math",
+    "level": 3
+  },
+  {
+    "q": "The population of a bacteria colony doubles every 3 hours. If starting with 100, how many after 9 hours?",
+    "opts": [
+      "300",
+      "600",
+      "800",
+      "900"
+    ],
+    "correct": 2,
+    "category": "math",
+    "level": 3
+  },
+  {
+    "q": "If (ax + 2)(bx + 7) = 15x\u00b2 + cx + 14 for all x, and a + b = 8, what are two possible values for c?",
+    "opts": [
+      "31 and 41",
+      "3 and 5",
+      "6 and 35",
+      "10 and 21"
+    ],
+    "correct": 0,
+    "category": "math",
+    "level": 3
+  },
+  {
+    "q": "Passage: 'The library was a sanctuary for silence; the only sounds were the turning of pages and the soft footsteps of the librarians.' \n\nQuestion: As used in the text, what does the word 'sanctuary' most nearly mean?",
+    "opts": [
+      "A noisy market",
+      "A protected or safe place",
+      "A scary location",
+      "A busy office"
+    ],
+    "correct": 1,
+    "category": "reading",
+    "level": 1
+  },
+  {
+    "q": "Passage: 'Although the cheetah is the fastest land animal, it cannot maintain its top speed for long distances. It relies on short bursts of energy to catch prey.' \n\nQuestion: Based on the text, which is true about the cheetah?",
+    "opts": [
+      "It runs slowly.",
+      "It has endurance for marathons.",
+      "It is faster than a car.",
+      "It uses short sprints to hunt."
+    ],
+    "correct": 3,
+    "category": "reading",
+    "level": 1
+  },
+  {
+    "q": "Grammar: The student forgot _____ backpack on the bus yesterday.",
+    "opts": [
+      "they're",
+      "there",
+      "their",
+      "theirs"
+    ],
+    "correct": 2,
+    "category": "reading",
+    "level": 1
+  },
+  {
+    "q": "Passage: 'Bees are essential for pollination. Without them, many crops would fail to produce food. Therefore, protecting bee populations is critical for agriculture.' \n\nQuestion: What is the main conclusion of the text?",
+    "opts": [
+      "Bees make honey.",
+      "Crops are failing everywhere.",
+      "We must protect bees to ensure food production.",
+      "Insects are dangerous."
+    ],
+    "correct": 2,
+    "category": "reading",
+    "level": 1
+  },
+  {
+    "q": "Grammar: Which sentence uses the correct punctuation?",
+    "opts": [
+      "I bought: apples, bananas, and pears.",
+      "I bought apples, bananas, and pears.",
+      "I bought, apples bananas and pears.",
+      "I bought apples bananas, and pears."
+    ],
+    "correct": 1,
+    "category": "reading",
+    "level": 1
+  },
+  {
+    "q": "Passage: 'Sarah loved the *vibrant* colors of the painting; the bright reds and deep blues caught her eye immediately.' \n\nQuestion: What does 'vibrant' mean in this context?",
+    "opts": [
+      "Dull and boring",
+      "Bright and striking",
+      "Quiet and soft",
+      "Dark and scary"
+    ],
+    "correct": 1,
+    "category": "reading",
+    "level": 1
+  },
+  {
+    "q": "Grammar: Select the best transition word. \n'It rained heavily all morning. _____, the soccer game was cancelled.'",
+    "opts": [
+      "However",
+      "Furthermore",
+      "Consequently",
+      "But"
+    ],
+    "correct": 2,
+    "category": "reading",
+    "level": 1
+  },
+  {
+    "q": "Passage: 'Researchers found that students who sleep 8 hours perform better on tests than those who sleep 5 hours.' \n\nQuestion: What does this finding suggest?",
+    "opts": [
+      "Sleep has no effect on grades.",
+      "Sleeping 5 hours is better.",
+      "Adequate sleep may improve academic performance.",
+      "Tests are too difficult."
+    ],
+    "correct": 2,
+    "category": "reading",
+    "level": 1
+  },
+  {
+    "q": "Grammar: Choose the correct verb form. \n'Neither of the boys _____ going to the park today.'",
+    "opts": [
+      "is",
+      "are",
+      "were",
+      "have"
+    ],
+    "correct": 0,
+    "category": "reading",
+    "level": 1
+  },
+  {
+    "q": "Passage: 'The ancient pottery was fragile. The archaeologist handled it with extreme care to avoid breaking it.' \n\nQuestion: Why did the archaeologist handle the pottery carefully?",
+    "opts": [
+      "It was heavy.",
+      "It was easily broken.",
+      "It was hot.",
+      "It was brand new."
+    ],
+    "correct": 1,
+    "category": "reading",
+    "level": 1
+  },
+  {
+    "q": "Grammar: 'Its' vs 'It's'. Choose the correct option. \n'_____ a beautiful day outside.'",
+    "opts": [
+      "Its",
+      "It's",
+      "Its'",
+      "It is'"
+    ],
+    "correct": 1,
+    "category": "reading",
+    "level": 1
+  },
+  {
+    "q": "Passage: 'Unlike his brother, who was quite talkative, Liam was taciturn and rarely spoke unless spoken to.' \n\nQuestion: What is the best definition of 'taciturn'?",
+    "opts": [
+      "Loud",
+      "Aggressive",
+      "Reserved and quiet",
+      "Happy"
+    ],
+    "correct": 2,
+    "category": "reading",
+    "level": 1
+  },
+  {
+    "q": "Grammar: Choose the correct spelling. \n'The committee reached a _____ regarding the new policy.'",
+    "opts": [
+      "concensus",
+      "concenssus",
+      "consensus",
+      "consencus"
+    ],
+    "correct": 2,
+    "category": "reading",
+    "level": 1
+  },
+  {
+    "q": "Passage: 'Renewable energy sources like solar and wind are becoming cheaper. Conversely, fossil fuels are becoming more expensive to extract.' \n\nQuestion: How does the second sentence relate to the first?",
+    "opts": [
+      "It supports the first sentence.",
+      "It offers a contrast.",
+      "It defines a term.",
+      "It repeats the idea."
+    ],
+    "correct": 1,
+    "category": "reading",
+    "level": 1
+  },
+  {
+    "q": "Grammar: 'Effect' vs 'Affect'. \n'The weather did not _____ our plans to go hiking.'",
+    "opts": [
+      "affect",
+      "effect",
+      "effects",
+      "affecting"
+    ],
+    "correct": 0,
+    "category": "reading",
+    "level": 1
+  },
+  {
+    "q": "Grammar: 'The dogs leash was lost.' Choose the correct punctuation.",
+    "opts": [
+      "dog's",
+      "dogs'",
+      "dogs",
+      "dog is"
+    ],
+    "correct": 0,
+    "category": "reading",
+    "level": 2
+  },
+  {
+    "q": "Passage: 'The scientist\u2019s theory was initially met with skepticism, but subsequent experiments vindicated his claims.' \n\nWhat does 'vindicated' mean?",
+    "opts": [
+      "Disproved",
+      "Ignored",
+      "Proven right",
+      "Confused"
+    ],
+    "correct": 2,
+    "category": "reading",
+    "level": 2
+  },
+  {
+    "q": "Grammar: Choose the correct transition. \n'I wanted to buy the shoes; _____, I didn't have enough money.'",
+    "opts": [
+      "therefore",
+      "however",
+      "additionally",
+      "similarly"
+    ],
+    "correct": 1,
+    "category": "reading",
+    "level": 2
+  },
+  {
+    "q": "Passage: 'Urban gardening helps reduce heat islands in cities. Plants absorb sunlight and release water vapor, cooling the air.' \n\nWhat is the main purpose of the text?",
+    "opts": [
+      "To sell plants",
+      "To explain a benefit of urban gardening",
+      "To criticize cities",
+      "To describe how plants grow"
+    ],
+    "correct": 1,
+    "category": "reading",
+    "level": 2
+  },
+  {
+    "q": "Grammar: 'Running down the street, the trees looked beautiful.' \n\nWhat is wrong with this sentence?",
+    "opts": [
+      "Comma splice",
+      "Dangling modifier",
+      "Wrong verb tense",
+      "Nothing"
+    ],
+    "correct": 1,
+    "category": "reading",
+    "level": 2
+  },
+  {
+    "q": "Grammar: Choose the correct word. \n'They went over _____ to see the view.'",
+    "opts": [
+      "their",
+      "they're",
+      "there",
+      "where"
+    ],
+    "correct": 2,
+    "category": "reading",
+    "level": 2
+  },
+  {
+    "q": "Passage: 'History is often written by the victors, leaving the voices of the defeated in silence.' \n\nWhat does this imply?",
+    "opts": [
+      "History books are always 100% true.",
+      "We may not have the full story of past events.",
+      "Losers cannot write.",
+      "Victory is unimportant."
+    ],
+    "correct": 1,
+    "category": "reading",
+    "level": 2
+  },
+  {
+    "q": "Grammar: 'Each of the students _____ a textbook.'",
+    "opts": [
+      "has",
+      "have",
+      "having",
+      "are having"
+    ],
+    "correct": 0,
+    "category": "reading",
+    "level": 2
+  },
+  {
+    "q": "Passage: 'The novel\u2019s protagonist is an anti-hero: flawed, cynical, yet ultimately striving for good.' \n\nWhich adjective best describes the protagonist?",
+    "opts": [
+      "Perfect",
+      "Evil",
+      "Complex",
+      "Simple"
+    ],
+    "correct": 2,
+    "category": "reading",
+    "level": 2
+  },
+  {
+    "q": "Grammar: Select the correct spelling.",
+    "opts": [
+      "Definately",
+      "Definitely",
+      "Definatly",
+      "Defanitely"
+    ],
+    "correct": 1,
+    "category": "reading",
+    "level": 2
+  },
+  {
+    "q": "Passage: 'While the author\u2019s prose is undeniably elegant, her arguments often rely on anecdotal evidence rather than rigorous data.' \n\nWhat is the critic\u2019s opinion?",
+    "opts": [
+      "The author is a bad writer.",
+      "The book is scientifically perfect.",
+      "The writing is good, but the evidence is weak.",
+      "The book is too long."
+    ],
+    "correct": 2,
+    "category": "reading",
+    "level": 3
+  },
+  {
+    "q": "Grammar: 'The data suggests that the treatment is effective; ____, further studies are needed to confirm long-term safety.'",
+    "opts": [
+      "consequently",
+      "nevertheless",
+      "for instance",
+      "likewise"
+    ],
+    "correct": 1,
+    "category": "reading",
+    "level": 3
+  },
+  {
+    "q": "Passage: 'Quantum entanglement challenges classical physics. It suggests that particles can affect each other instantaneously over vast distances, defying the speed of light limit for information transfer.' \n\nWhat is the central conflict described?",
+    "opts": [
+      "Particles vs. Waves",
+      "Classical physics vs. Quantum behavior",
+      "Speed vs. Distance",
+      "Light vs. Dark"
+    ],
+    "correct": 1,
+    "category": "reading",
+    "level": 3
+  },
+  {
+    "q": "Grammar: Which sentence is grammatically correct?",
+    "opts": [
+      "The student, who studies hard, will pass.",
+      "The student who studies hard, will pass.",
+      "The student, who studies hard will pass.",
+      "The student who, studies hard will pass."
+    ],
+    "correct": 0,
+    "category": "reading",
+    "level": 3
+  },
+  {
+    "q": "Passage: 'The diplomat\u2019s speech was equivocal; both sides claimed he supported their cause.' \n\nWhat does 'equivocal' mean here?",
+    "opts": [
+      "Loud and clear",
+      "Open to multiple interpretations",
+      "Angry",
+      "Short"
+    ],
+    "correct": 1,
+    "category": "reading",
+    "level": 3
+  },
+  {
+    "q": "Grammar: 'Not only did she finish the project early, _____ she also exceeded all quality expectations.'",
+    "opts": [
+      "and",
+      "but",
+      "so",
+      "or"
+    ],
+    "correct": 1,
+    "category": "reading",
+    "level": 3
+  },
+  {
+    "q": "Passage: 'In 19th-century realist literature, authors sought to depict life as it truly was, rejecting the idealized romanticism of the previous era.' \n\nRealist authors likely avoided:",
+    "opts": [
+      "Descriptions of poverty",
+      "Exaggerated heroes and perfect endings",
+      "Everyday dialogue",
+      "Social critique"
+    ],
+    "correct": 1,
+    "category": "reading",
+    "level": 3
+  },
+  {
+    "q": "Grammar: Select the correct relative pronoun. \n'The artist _____ painting won the award is my cousin.'",
+    "opts": [
+      "who",
+      "whom",
+      "whose",
+      "who's"
+    ],
+    "correct": 2,
+    "category": "reading",
+    "level": 3
+  },
+  {
+    "q": "Passage: 'The phenomenon is ephemeral, lasting only a few seconds before vanishing completely.' \n\n'Ephemeral' implies the event is:",
+    "opts": [
+      "Dangerous",
+      "Short-lived",
+      "Beautiful",
+      "Permanent"
+    ],
+    "correct": 1,
+    "category": "reading",
+    "level": 3
+  },
+  {
+    "q": "Grammar: 'Having finished the exam, the clock struck noon.' \n\nIdentify the error.",
+    "opts": [
+      "No error",
+      "Subject-verb agreement",
+      "Dangling modifier",
+      "Comma splice"
+    ],
+    "correct": 2,
+    "category": "reading",
+    "level": 3
+  },
+  {
+    "q": "Definition of 'Abundant'",
+    "opts": [
+      "Scarce and rare",
+      "Existing in large quantities",
+      "To abandon something",
+      "Very dark"
+    ],
+    "correct": 1,
+    "category": "vocab",
+    "level": 1
+  },
+  {
+    "q": "Select the synonym for 'Candid'",
+    "opts": [
+      "Secretive",
+      "Dishonest",
+      "Frank and honest",
+      "Sweet"
+    ],
+    "correct": 2,
+    "category": "vocab",
+    "level": 1
+  },
+  {
+    "q": "Select the synonym for 'Brief'",
+    "opts": [
+      "Short in duration",
+      "Very large",
+      "Complicated",
+      "Legal"
+    ],
+    "correct": 0,
+    "category": "vocab",
+    "level": 1
+  },
+  {
+    "q": "Definition of 'Capacity'",
+    "opts": [
+      "A type of city",
+      "The ability to hold or produce",
+      "A lack of space",
+      "To escape"
+    ],
+    "correct": 1,
+    "category": "vocab",
+    "level": 1
+  },
+  {
+    "q": "Select the synonym for 'Debate'",
+    "opts": [
+      "To agree completely",
+      "To argue or discuss",
+      "To ignore",
+      "To paint"
+    ],
+    "correct": 1,
+    "category": "vocab",
+    "level": 1
+  },
+  {
+    "q": "Definition of 'Efficient'",
+    "opts": [
+      "Wasting time",
+      "Achieving maximum productivity",
+      "Very large",
+      "Broken"
+    ],
+    "correct": 1,
+    "category": "vocab",
+    "level": 1
+  },
+  {
+    "q": "Select the synonym for 'Fatal'",
+    "opts": [
+      "Causing death",
+      "Full of life",
+      "A type of metal",
+      "Minor"
+    ],
+    "correct": 0,
+    "category": "vocab",
+    "level": 1
+  },
+  {
+    "q": "Definition of 'Genre'",
+    "opts": [
+      "A category of art or music",
+      "A specific person",
+      "A heavy weight",
+      "A type of food"
+    ],
+    "correct": 0,
+    "category": "vocab",
+    "level": 1
+  },
+  {
+    "q": "Select the synonym for 'Habitat'",
+    "opts": [
+      "A bad habit",
+      "The natural home of an animal",
+      "A type of clothing",
+      "A routine"
+    ],
+    "correct": 1,
+    "category": "vocab",
+    "level": 1
+  },
+  {
+    "q": "Definition of 'Ignite'",
+    "opts": [
+      "To freeze",
+      "To catch fire",
+      "To ignore",
+      "To fly"
+    ],
+    "correct": 1,
+    "category": "vocab",
+    "level": 1
+  },
+  {
+    "q": "Select the synonym for 'Jovial'",
+    "opts": [
+      "Angry",
+      "Sad",
+      "Cheerful and friendly",
+      "Tired"
+    ],
+    "correct": 2,
+    "category": "vocab",
+    "level": 1
+  },
+  {
+    "q": "Definition of 'Keen'",
+    "opts": [
+      "Dull",
+      "Sharp or penetrating",
+      "Slow",
+      "Soft"
+    ],
+    "correct": 1,
+    "category": "vocab",
+    "level": 1
+  },
+  {
+    "q": "Select the synonym for 'Linger'",
+    "opts": [
+      "To leave quickly",
+      "To stay longer than necessary",
+      "To run",
+      "To jump"
+    ],
+    "correct": 1,
+    "category": "vocab",
+    "level": 1
+  },
+  {
+    "q": "Definition of 'Manipulate'",
+    "opts": [
+      "To handle or control skillfully",
+      "To break",
+      "To lose",
+      "To watch"
+    ],
+    "correct": 0,
+    "category": "vocab",
+    "level": 1
+  },
+  {
+    "q": "Select the synonym for 'Narrate'",
+    "opts": [
+      "To sleep",
+      "To tell a story",
+      "To listen",
+      "To write code"
+    ],
+    "correct": 1,
+    "category": "vocab",
+    "level": 1
+  },
+  {
+    "q": "Definition of 'Objective'",
+    "opts": [
+      "Influenced by feelings",
+      "Not influenced by feelings; unbiased",
+      "A large object",
+      "Subjective"
+    ],
+    "correct": 1,
+    "category": "vocab",
+    "level": 1
+  },
+  {
+    "q": "Select the synonym for 'Particular'",
+    "opts": [
+      "General",
+      "Specific",
+      "Random",
+      "Easy"
+    ],
+    "correct": 1,
+    "category": "vocab",
+    "level": 1
+  },
+  {
+    "q": "Definition of 'Quest'",
+    "opts": [
+      "A question",
+      "A long search for something",
+      "A quick nap",
+      "A test"
+    ],
+    "correct": 1,
+    "category": "vocab",
+    "level": 1
+  },
+  {
+    "q": "Select the synonym for 'Radiant'",
+    "opts": [
+      "Dark",
+      "Shining or glowing",
+      "Radioactive",
+      "Silent"
+    ],
+    "correct": 1,
+    "category": "vocab",
+    "level": 1
+  },
+  {
+    "q": "Definition of 'Sanctuary'",
+    "opts": [
+      "A place of refuge or safety",
+      "A dangerous place",
+      "A loud market",
+      "A shoe factory"
+    ],
+    "correct": 0,
+    "category": "vocab",
+    "level": 1
+  },
+  {
+    "q": "Select the synonym for 'Tactics'",
+    "opts": [
+      "Accidents",
+      "Strategies",
+      "Clocks",
+      "Tiles"
+    ],
+    "correct": 1,
+    "category": "vocab",
+    "level": 1
+  },
+  {
+    "q": "Definition of 'Unanimous'",
+    "opts": [
+      "Two people agreeing",
+      "Fully in agreement",
+      "Anonymous",
+      "No one agrees"
+    ],
+    "correct": 1,
+    "category": "vocab",
+    "level": 1
+  },
+  {
+    "q": "Select the synonym for 'Vacant'",
+    "opts": [
+      "Full",
+      "Empty",
+      "Expensive",
+      "Large"
+    ],
+    "correct": 1,
+    "category": "vocab",
+    "level": 1
+  },
+  {
+    "q": "Definition of 'Wary'",
+    "opts": [
+      "Tired",
+      "Cautious about dangers",
+      "Happy",
+      "Wet"
+    ],
+    "correct": 1,
+    "category": "vocab",
+    "level": 1
+  },
+  {
+    "q": "Select the synonym for 'Yield'",
+    "opts": [
+      "To stop",
+      "To produce or provide",
+      "To shout",
+      "To hide"
+    ],
+    "correct": 1,
+    "category": "vocab",
+    "level": 1
+  },
+  {
+    "q": "Definition of 'Ambiguous'",
+    "opts": [
+      "Very clear",
+      "Having more than one meaning",
+      "Large",
+      "Angry"
+    ],
+    "correct": 1,
+    "category": "vocab",
+    "level": 2
+  },
+  {
+    "q": "Select the synonym for 'Resilient'",
+    "opts": [
+      "Weak",
+      "Flexible/Tough",
+      "Expensive",
+      "Lazy"
+    ],
+    "correct": 1,
+    "category": "vocab",
+    "level": 2
+  },
+  {
+    "q": "Definition of 'Hypothesis'",
+    "opts": [
+      "A proven fact",
+      "A proposed explanation",
+      "A laboratory tool",
+      "A math problem"
+    ],
+    "correct": 1,
+    "category": "vocab",
+    "level": 2
+  },
+  {
+    "q": "Select the synonym for 'Inevitable'",
+    "opts": [
+      "Unavoidable",
+      "Unlikely",
+      "Scary",
+      "Fast"
+    ],
+    "correct": 0,
+    "category": "vocab",
+    "level": 2
+  },
+  {
+    "q": "Definition of 'Benevolent'",
+    "opts": [
+      "Cruel",
+      "Rich",
+      "Kind and charitable",
+      "Old"
+    ],
+    "correct": 2,
+    "category": "vocab",
+    "level": 2
+  },
+  {
+    "q": "Select the synonym for 'Scrutinize'",
+    "opts": [
+      "To ignore",
+      "To examine closely",
+      "To write quickly",
+      "To break"
+    ],
+    "correct": 1,
+    "category": "vocab",
+    "level": 2
+  },
+  {
+    "q": "Definition of 'Diverse'",
+    "opts": [
+      "Showing a great deal of variety",
+      "Very similar",
+      "Swimming underwater",
+      "Simple"
+    ],
+    "correct": 0,
+    "category": "vocab",
+    "level": 2
+  },
+  {
+    "q": "Select the synonym for 'Innovate'",
+    "opts": [
+      "To copy",
+      "To introduce something new",
+      "To destroy",
+      "To buy"
+    ],
+    "correct": 1,
+    "category": "vocab",
+    "level": 2
+  },
+  {
+    "q": "Definition of 'Aesthetic'",
+    "opts": [
+      "Related to beauty",
+      "Related to sports",
+      "Related to math",
+      "Related to food"
+    ],
+    "correct": 0,
+    "category": "vocab",
+    "level": 2
+  },
+  {
+    "q": "Select the synonym for 'Abstract'",
+    "opts": [
+      "Concrete",
+      "Conceptual/Theoretical",
+      "Physical",
+      "Easy"
+    ],
+    "correct": 1,
+    "category": "vocab",
+    "level": 2
+  },
+  {
+    "q": "Definition of 'Ubiquitous'",
+    "opts": [
+      "Rare and scarce",
+      "Found everywhere",
+      "Ugly",
+      "Expensive"
+    ],
+    "correct": 1,
+    "category": "vocab",
+    "level": 3
+  },
+  {
+    "q": "Select the synonym for 'Esoteric'",
+    "opts": [
+      "Common knowledge",
+      "Understood by few",
+      "Electric",
+      "Simple"
+    ],
+    "correct": 1,
+    "category": "vocab",
+    "level": 3
+  },
+  {
+    "q": "Definition of 'Pragmatic'",
+    "opts": [
+      "Dealing with things sensibly/realistically",
+      "Dreamy and idealistic",
+      "Automatic",
+      "Problematic"
+    ],
+    "correct": 0,
+    "category": "vocab",
+    "level": 3
+  },
+  {
+    "q": "Select the synonym for 'Superfluous'",
+    "opts": [
+      "Necessary",
+      "Unnecessary/Excessive",
+      "Fluid",
+      "Superior"
+    ],
+    "correct": 1,
+    "category": "vocab",
+    "level": 3
+  },
+  {
+    "q": "Definition of 'Obsequious'",
+    "opts": [
+      "Overly obedient/servile",
+      "Very fat",
+      "Rude",
+      "Observant"
+    ],
+    "correct": 0,
+    "category": "vocab",
+    "level": 3
+  },
+  {
+    "q": "Select the synonym for 'Ephemeral'",
+    "opts": [
+      "Lasting forever",
+      "Short-lived",
+      "Religious",
+      "Solid"
+    ],
+    "correct": 1,
+    "category": "vocab",
+    "level": 3
+  },
+  {
+    "q": "Definition of 'Cacophony'",
+    "opts": [
+      "A harsh mixture of sounds",
+      "A beautiful melody",
+      "A telephone",
+      "A fake story"
+    ],
+    "correct": 0,
+    "category": "vocab",
+    "level": 3
+  },
+  {
+    "q": "Select the synonym for 'Enervate'",
+    "opts": [
+      "To energize",
+      "To weaken/drain energy",
+      "To enter",
+      "To annoy"
+    ],
+    "correct": 1,
+    "category": "vocab",
+    "level": 3
+  },
+  {
+    "q": "Definition of 'Venerate'",
+    "opts": [
+      "To regard with great respect",
+      "To hate",
+      "To polish",
+      "To venom"
+    ],
+    "correct": 0,
+    "category": "vocab",
+    "level": 3
+  },
+  {
+    "q": "Select the synonym for 'Alacrity'",
+    "opts": [
+      "Laziness",
+      "Brisk and cheerful readiness",
+      "Fear",
+      "Confusion"
+    ],
+    "correct": 1,
+    "category": "vocab",
+    "level": 3
+  }
+]

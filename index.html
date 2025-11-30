@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SAT-1600: EVO v4.1.0</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="app-title">SAT-1600 <span class="badge">EVO</span></div>
+    <div class="header-right">
+      <span id="currentUserLabel" class="user-label">No user</span>
+      <div id="userMenu" class="user-menu hidden">
+        <button id="menuLogout" class="danger">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="app-main">
+    <section id="screen-auth" class="screen visible">
+      <h1>Select user</h1>
+      <div class="card">
+        <ul id="userList" class="user-list"></ul>
+        <p id="noUsersMsg" class="muted small-text">No users yet. Create one below.</p>
+      </div>
+      <div class="card">
+        <div class="form-row">
+          <input type="text" id="newUserName" placeholder="Name (e.g. Alex)" />
+          <button id="btnCreateUser" class="primary">Create</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="screen-home" class="screen">
+      <h1 id="homeGreeting">Hi!</h1>
+
+      <div class="card" style="text-align:center;">
+        <p id="homeScoreDisplay" style="font-size:1.5rem; font-weight:bold; color:var(--primary); margin:0;">
+          Current SAT Score: 400
+        </p>
+        <p id="xpSummary" class="muted small-text">Keep training to evolve your Guardian.</p>
+      </div>
+
+      <div class="card">
+        <h2>Subject & Level</h2>
+        <div class="form-row">
+          <select id="subjectSelect"></select>
+          <select id="levelSelect">
+            <option value="1">Level 1</option>
+            <option value="2">Level 2</option>
+            <option value="3">Level 3</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Training modes</h2>
+        <div class="modes-grid">
+          <button id="btnStartPractice" class="mode-btn primary">
+            Practice
+            <span class="mode-desc">Normal training, full feedback.</span>
+          </button>
+          <button id="btnStartAdaptive" class="mode-btn">
+            Adaptive
+            <span class="mode-desc">Difficulty tag, same engine.</span>
+          </button>
+          <button id="btnStartTimed" class="mode-btn">
+            Timed
+            <span class="mode-desc">Beat the clock (60 s).</span>
+          </button>
+          <button id="btnStartReview" class="mode-btn">
+            Review mistakes
+            <span class="mode-desc">Only questions you missed.</span>
+          </button>
+          <button id="btnStartExam" class="mode-btn">
+            Exam
+            <span class="mode-desc">Mini full exam (25 min).</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="screen-quiz" class="screen">
+      <div class="quiz-header">
+        <div id="quizModeLabel" class="pill"></div>
+        <div id="timerBox" class="pill pill-timer hidden">
+          ⏱ <span id="timerText"></span>
+        </div>
+      </div>
+
+      <div class="card card-quiz">
+        <div class="avatar-stage">
+          <div id="avatarCharacter" class="avatar-face phase-1"></div>
+          <div id="avatarScoreDisplay" class="avatar-score">SAT: 400</div>
+          <div id="speechBubble" class="speech-bubble hidden">
+            <p id="speechText"></p>
+          </div>
+          <button id="btnToggleVoice" class="voice-toggle" title="Toggle voice">🔊</button>
+        </div>
+
+        <div class="quiz-top-row">
+          <span id="progressText" class="muted"></span>
+          <span id="scoreText" class="muted"></span>
+        </div>
+
+        <h2 id="questionText" class="question-text">Loading...</h2>
+        <ul id="answersList" class="answers-list"></ul>
+
+        <div id="explanationBox" class="explanation hidden">
+          <h3>Theory & explanation</h3>
+          <p id="explanationText"></p>
+          <p id="explanationExample" class="muted small-text"></p>
+        </div>
+
+        <div class="quiz-footer">
+          <button id="btnNextQuestion" class="primary hidden">Next</button>
+          <button id="btnQuitQuiz" class="link-button">Quit</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="screen-results" class="screen">
+      <h1>Score report</h1>
+      <div class="card">
+        <h2 id="resultHeadline"></h2>
+        <p id="resultLine"></p>
+        <p id="resultExtra" class="muted small-text"></p>
+      </div>
+      <button id="btnResultsHome" class="mode-btn primary">Back to Home</button>
+    </section>
+  </main>
+
+  <canvas id="confetti-canvas"></canvas>
+
+  <footer class="app-footer">
+    <span class="muted small-text">SAT-1600 EVO v4.1.0 – Local only, all data stays on this device.</span>
+  </footer>
+
+  <script src="explanations.js"></script>
+  <script src="app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js').catch(() => {});
+    }
+  </script>
+</body>
+</html>

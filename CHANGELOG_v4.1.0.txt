@@ -1,0 +1,1 @@
+SAT-1600 EVO v4.1.0 FLAT\n- All files in root folder.\n- Practice / Adaptive / Timed / Review / Exam modes.\n- XP + virtual SAT score + avatar evolution.\n- Uses explanations.js global SAT_EXPLANATIONS.\n
